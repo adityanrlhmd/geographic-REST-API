@@ -8,6 +8,22 @@ const Geographic = require('../models/geographicModel')
 const getGeographic = asyncHandler(async(req, res) => { 
     const geographic = await Geographic.find()
 
+    if(!geographic) {
+        res.status(500)
+        throw new Error('Geographic not found')
+    }
+
+    res.status(200).json(geographic)
+})
+
+const getGeographicById = asyncHandler(async(req, res) => { 
+    const geographic = await Geographic.findById(req.params.id)
+
+    if(!geographic) {
+        res.status(404)
+        throw new Error('Geographic not found')
+    }
+
     res.status(200).json(geographic)
 })
 
@@ -23,6 +39,7 @@ const setGeographic = asyncHandler(async(req, res) => {
 
     const geographic = await Geographic.create({
         text: req.body.text,
+        price: req.body.price,
     })
     res.status(200).json(geographic)
 })
@@ -64,6 +81,7 @@ const deleteGeographic = asyncHandler(async(req, res) => {
 
 module.exports = {
     getGeographic,
+    getGeographicById,
     setGeographic,
     updateGeographic,
     deleteGeographic

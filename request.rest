@@ -1,0 +1,26 @@
+GET http://localhost:5000/api/geographic
+
+###
+GET http://localhost:5000/api/geographic/6293053ef2431d8c9fa534e4
+
+###
+POST http://localhost:5000/api/geographic
+Content-Type: application/json
+
+{
+    "text": "Salakopi",
+    "price": 4000
+}
+
+###
+PUT http://localhost:5000/api/geographic/6293011b2bf5e2f921cf6a93
+Content-Type: application/json
+
+{
+    "text": "Cisaat Update",
+    "price": 8888
+}
+
+###
+DELETE http://localhost:5000/api/geographic/6293011b2bf5e2f921cf6a93
+
