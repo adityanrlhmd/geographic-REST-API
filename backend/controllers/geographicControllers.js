@@ -38,8 +38,29 @@ const setGeographic = asyncHandler(async(req, res) => {
     } 
 
     const geographic = await Geographic.create({
+        latde: req.body.latde,
+        longtde: req.body.longtde,
         text: req.body.text,
-        price: req.body.price,
+        text2: req.body.text2,
+        text3: req.body.text3,
+
+        date: req.body.date,
+        die: req.body.die,
+        seriousInj: req.body.seriousInj,
+        minorInj: req.body.minorInj,
+        materialLoss: req.body.materialLoss,
+
+        date2: req.body.date2,
+        die2: req.body.die2,
+        seriousInj2: req.body.seriousInj2,
+        minorInj2: req.body.minorInj2,
+        materialLoss2: req.body.materialLoss2,
+        
+        date3: req.body.date3,
+        die3: req.body.die3,
+        seriousInj3: req.body.seriousInj3,
+        minorInj3: req.body.minorInj3,
+        materialLoss3: req.body.materialLoss3,
     })
     res.status(200).json(geographic)
 })

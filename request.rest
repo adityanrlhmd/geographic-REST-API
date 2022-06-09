@@ -8,8 +8,26 @@ POST http://localhost:5000/api/geographic
 Content-Type: application/json
 
 {
-    "text": "Salakopi",
-    "price": 4000
+    "latde": -6.911095,
+    "longtde": 106.896071,
+    "text": "KEND. SP. MTR YMHA MIO GT  MENABRAK BELAKANG KEND SP. MTR HONDA SUPRA X DEPAN - BELAKANG ",
+    "date": "2017-05-06T21:00:00Z",
+    "die": 1,
+    "seriousInj": 0,
+    "minorInj": 1,
+    "materialLoss": 100000,
+    "text2": "KEND SP. MOTOR KAWASAKI NINJA RR BERTABRAKAN DENGAN KEND. TRUCK TRONTON  DEPAN – SAMPING",
+    "date2": "2017-07-04T01:30:00Z",
+    "die2": 1,
+    "seriousInj2": 0,
+    "minorInj2": 1,
+    "materialLoss2": 3000000,
+    "text3": "KEND SP. MOTOR YMHA VIXION MENABRAK PENYEBERANG JALAN  TABRAK MANUSIA",
+    "date3": "2017-07-01T20:30:00Z",
+    "die3": 1,
+    "seriousInj3": 0,
+    "minorInj3": 2,
+    "materialLoss3": 200000
 }
 
 ###
@@ -22,5 +40,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/api/geographic/6293011b2bf5e2f921cf6a93
+DELETE http://localhost:5000/api/geographic/62a18c3dac96b580b2bd3823
 
