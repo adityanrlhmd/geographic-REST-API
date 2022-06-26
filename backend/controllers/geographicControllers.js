@@ -40,6 +40,12 @@ const setGeographic = asyncHandler(async(req, res) => {
     const geographic = await Geographic.create({
         latde: req.body.latde,
         longtde: req.body.longtde,
+        year: req.body.year,
+        
+        street: req.body.street,
+        street2: req.body.street2,
+        street3: req.body.street3,
+
         text: req.body.text,
         text2: req.body.text2,
         text3: req.body.text3,

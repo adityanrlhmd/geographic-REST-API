@@ -9,6 +9,13 @@ const geographicSchema = mongoose.Schema({
         type: Number,
         required: [true, 'Please add a longitude value']
     },
+    year: {
+        type: Number,
+        required: [true, 'Please add a year value']
+    },
+    street: {
+        type: String,
+    },
     text: {
         type: String,
     },
@@ -27,6 +34,9 @@ const geographicSchema = mongoose.Schema({
     materialLoss: {
         type: Number,
     },
+    street2: {
+        type: String,
+    },
     text2: {
         type: String,
     },
@@ -44,6 +54,9 @@ const geographicSchema = mongoose.Schema({
     },
     materialLoss2: {
         type: Number,
+    },
+    street3: {
+        type: String,
     },
     text3: {
         type: String,

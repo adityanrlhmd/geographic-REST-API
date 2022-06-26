@@ -15,6 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/geographic', require('./routes/geographicRoutes'))
+app.use('/api/user', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 

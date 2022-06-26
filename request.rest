@@ -1,44 +1,67 @@
 GET http://localhost:5000/api/geographic
 
 ###
-GET http://localhost:5000/api/geographic/6293053ef2431d8c9fa534e4
+GET http://localhost:5000/api/geographic/62a18e3c516ef1c5683d6f6f
 
 ###
 POST http://localhost:5000/api/geographic
 Content-Type: application/json
 
 {
+    "latde": -6.876883, 
+    "longtde": 107.021355,
+    "year" : 2018,
+    "street": "asdA CIMANGKOK KEC. SUKALARANG KAB. SUKABUMI ",
+    "text": "",
+    "date": "",
+    "die": ,
+    "seriousInj": ,
+    "minorInj": ,
+    "materialLoss": ,
+    "street2": ,
+    "text2": ,
+    "date2": ,
+    "die2": ,
+    "seriousInj2": ,
+    "minorInj2": ,
+    "materialLoss2": ,
+    "street3": ,
+    "text3": ,
+    "date3":,
+    "die3": ,
+    "seriousInj3": ,
+    "minorInj3": ,
+    "materialLoss3": 
+}
+
+###
+PUT http://localhost:5000/api/geographic/62a18e3c516ef1c5683d6f6f
+Content-Type: application/json
+
+{
     "latde": -6.911095,
     "longtde": 106.896071,
+    "year": 2017,
     "text": "KEND. SP. MTR YMHA MIO GT  MENABRAK BELAKANG KEND SP. MTR HONDA SUPRA X DEPAN - BELAKANG ",
-    "date": "2017-05-06T21:00:00Z",
+    "date": "2017-05-06T21:00:00.000Z",
     "die": 1,
     "seriousInj": 0,
     "minorInj": 1,
     "materialLoss": 100000,
     "text2": "KEND SP. MOTOR KAWASAKI NINJA RR BERTABRAKAN DENGAN KEND. TRUCK TRONTON  DEPAN – SAMPING",
-    "date2": "2017-07-04T01:30:00Z",
+    "date2": "2017-07-04T01:30:00.000Z",
     "die2": 1,
     "seriousInj2": 0,
     "minorInj2": 1,
     "materialLoss2": 3000000,
     "text3": "KEND SP. MOTOR YMHA VIXION MENABRAK PENYEBERANG JALAN  TABRAK MANUSIA",
-    "date3": "2017-07-01T20:30:00Z",
+    "date3": "2017-07-01T20:30:00.000Z",
     "die3": 1,
     "seriousInj3": 0,
     "minorInj3": 2,
-    "materialLoss3": 200000
+    "materialLoss3": 200000,
 }
 
 ###
-PUT http://localhost:5000/api/geographic/6293011b2bf5e2f921cf6a93
-Content-Type: application/json
-
-{
-    "text": "Cisaat Update",
-    "price": 8888
-}
-
-###
-DELETE http://localhost:5000/api/geographic/62a18c3dac96b580b2bd3823
+DELETE http://localhost:5000/api/geographic/62ae6fd733facb41b4d72f0a
 
